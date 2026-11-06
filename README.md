@@ -25,7 +25,8 @@ Inspired by the [awesome-list](https://github.com/sindresorhus/awesome) philosop
 - [CAD Agent Skills](#-cad-agent-skills)
 - [CAD Harness Plugins](#-cad-harness-plugins)
 - [CAD Agent Infrastructure & SDKs](#-cad-agent-infrastructure--sdks)
-- [CAD AI Research & Benchmarks](#-cad-ai-research--benchmarks)
+- [CAD Benchmarks & Evaluation](#-cad-benchmarks--evaluation)
+- [CAD AI Research](#-cad-ai-research)
 - [Contributing](#-contributing)
 
 ---
@@ -98,6 +99,21 @@ Key Features
 - Headless automation and plugin system
 - GPU-accelerated rendering
 - Cross-platform desktop and web applications
+
+#### MLightCAD
+
+https://github.com/mlightcad/cad-viewer
+
+A fully web-based DWG/DXF viewer and editor that runs entirely in the browser, with a plugin architecture that includes an official AI assistant.
+
+Key Features
+
+- Browser-native DWG/DXF parsing, editing, and rendering with no backend
+- Plugin system with official AI assistant and HTML/PDF/SVG export plugins
+- AutoCAD-style command line and 2D drafting workflows
+- High-performance WebGL/THREE.js rendering of large drawings
+- Programmatic integration through npm packages or one-line iframe embed
+- Desktop and mobile browser support with touch gestures
 
 ---
 
@@ -393,6 +409,20 @@ Key Features
 - Reusable subskills for specialized operations
 - MCP integration for tool execution
 
+#### SimpleCADAPI Agent Skill
+
+https://github.com/PhySpace/SimpleCADAPI
+
+A bundled agent skill that teaches coding agents the SimpleCADAPI parametric modeling discipline.
+
+Key Features
+
+- Installable into agent harnesses via `sca skill install`
+- Feature Tree Convention for verifier-first staged modeling
+- Geometry-grounding selection and deterministic face tagging practices
+- Recorded, replayable agent sessions with full tool-call transcripts
+- Editor collaboration workflow for viewport picks and cell references
+
 ---
 
 ## 🧰 CAD Harness Plugins
@@ -476,9 +506,58 @@ Key Features
 - CAD inspection and export APIs
 - Simulation and agent-oriented interaction
 
+#### SimpleCADAPI
+
+https://github.com/PhySpace/SimpleCADAPI
+
+An agent-native, OpenCASCADE-based Python SDK for language models to create, inspect, and reconstruct complex, editable 3D models.
+
+Key Features
+
+- Parametric models as code notebooks with named parameters and physical units
+- Functional B-Rep modeling operations on a C++ OpenCASCADE engine
+- QL selectors for geometry grounding and stable feature selection
+- Replayable operation graphs with JSON export and replay
+- Semantic tags, STEP AP242/STL export, and editable FreeCAD package translation
+- Agent-oriented STEP/BREP reconstruction with stable entity IDs and measured acceptance gates
+
 ---
 
-## 🔬 CAD AI Research & Benchmarks
+## 📏 CAD Benchmarks & Evaluation
+
+Benchmarks, datasets, and leaderboards for measuring how well AI agents and LLMs understand, generate, and edit CAD models.
+
+#### CADGenBench
+
+https://huggingface.co/spaces/HuggingAI4Engineering/CADGenBench
+
+A public benchmark and leaderboard for CAD generation and editing, evaluating AI systems through tool-agnostic STEP/BREP artifact submissions.
+
+Key Features
+
+- CAD generation and editing task tracks
+- Tool-agnostic STEP/BREP submission protocol
+- Hosted evaluation pipeline on Hugging Face Spaces
+- Public leaderboard comparing LLMs and CAD agent toolchains
+- Used to evaluate MCP-based CAD modeling stacks
+
+#### BenchCAD
+
+https://github.com/BenchCAD/BenchCAD-main
+
+An execution-grounded benchmark for evaluating whether models can understand and write parametric CadQuery code for real mechanical parts.
+
+Key Features
+
+- 17,900 execution-verified CadQuery programs across 106 industrial part families
+- Parts drawn from 47 engineering standards (ISO, DIN, EN, ASME, IEC)
+- Vision2Code, CodeEdit, Vision-QA, and Code-QA tasks
+- Deterministic execution-based scoring via voxel IoU, with no LLM judge
+- One-command runner with pinned environment and Hugging Face dataset
+
+---
+
+## 🔬 CAD AI Research
 
 Research projects exploring generative CAD, geometry understanding, and AI-based modeling.
 
