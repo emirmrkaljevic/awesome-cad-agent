@@ -372,6 +372,22 @@ Key Features
 
 Note: The desktop repository is currently in maintenance mode. See the separate [Forgent3D Skills](https://github.com/forgent3d/forgent3d-skills) project for its newer lightweight agent workflow.
 
+#### MAC (Multi-Agent CAD)
+
+https://github.com/Pan-Chera/Multi-Agent-CAD
+
+A decoupled multi-agent framework from Tsinghua University that turns natural-language design briefs into editable CAD parts and multi-component assemblies.
+
+Key Features
+
+- Multi-agent pipeline for planning, geometry, coding, repair, and an independent Judge
+- Single-part Text-to-CAD workflow with visual and geometric in-loop verification
+- Experimental natural-language assembly generation with joint mating and part reuse
+- Editable STEP, STL, GLB export, plus URDF handoff for robotics simulation
+- Auditable structured briefs, geometry plans, measurements, and QA reports
+- Browser-based UI with 3D preview and downloadable results
+- Built on build123d, LangGraph, and Aider
+
 ---
 
 ## 🧩 CAD Agent Skills
