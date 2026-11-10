@@ -151,6 +151,21 @@ Key Features
 - Engineering automation examples and reusable skills
 - Windows-based CAD application integration
 
+#### mesh2cad
+
+https://github.com/emirmrkaljevic/mesh2cad
+
+An MCP server and CLI that turns an STL mesh of a simple mechanical part into STEP plus an editable CadQuery, OpenSCAD, or FreeCAD script, and refuses the script when the fit is not good enough.
+
+Key Features
+
+- Convert STL meshes to STEP and parametric CadQuery, OpenSCAD, or FreeCAD scripts
+- Named dimensions such as hole diameter, fillet radius, and boss height
+- Self-check gate that reports deviation and volume error and refuses a bad fit
+- Local stdio MCP server (`mesh2cad mcp`) with convert, params, and edit tools
+- Does not require a locally installed CAD application for CadQuery or OpenSCAD export
+- MIT license, published on PyPI as `mesh2cad`
+
 ### AutoCAD and DWG/DXF
 
 #### AutoCAD-MCP
